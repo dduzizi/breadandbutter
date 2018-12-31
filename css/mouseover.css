@@ -1,0 +1,74 @@
+.nd-wrap {
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+}
+.nd-wrap img {
+	width: 180px;
+  	height:180px;
+	display: block;
+}
+.nd-title {
+	position: relative;		
+	top: -150px;
+	opacity: 0;
+	margin: 10px 0 10px;
+	font-family:notokr-demilight;
+	font-weight: 300;
+	-webkit-transition: all 1s ease 0.01s;
+			transition: all 1s ease 0.01s;
+  color: #fff;	
+}
+
+.nd-title span {
+	color: #fff;	
+	padding: 0 15px 10px;
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+}
+
+.nd-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+}
+.nd-content_inner {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.nd-content_inner1 {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+/* =============== HOVER AREA =============== */
+.nd-wrap:hover .nd-icon,
+.nd-wrap:hover .nd-content,
+.nd-wrap:hover .nd-title {
+	opacity: 1;
+	top: 0;
+}
+.nd-wrap:hover .nd-title {
+	-webkit-transition: all 0.5s cubic-bezier(1.000, -0.530, 0.405, 1.425) 0.01s;
+			transition: all 0.5s cubic-bezier(1.000, -0.530, 0.405, 1.425) 0.01s;
+}
+.nd-wrap:hover .nd-content {
+	background: rgba(0, 0, 0, 0.5);
+}
+/* =============== SET DELAY FOR ICONS WHEN HOVER =============== */
+.nd-content .nd-icon:nth-of-type(1) {	
+	-webkit-transition-delay: 0.1s;
+			transition-delay: 0.1s;
+}
+/* ============================== HOVER STYLE ============================== */
+.nd-style-1 .nd-icon {
+	top: 150px;
+}
